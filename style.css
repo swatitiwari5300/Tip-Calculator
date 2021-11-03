@@ -1,44 +1,69 @@
-html{
-  background-color: #FFDEDE;
-  height: 100%;
+body{
+    background-color: #001f4f;
+    font-family: 'Raleway', sans-serif;
+}
 
+.container{
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 20px;
 }
-#container{
-  height: 325px;
-  width: 350px;
-  background-color: #deffff;
 
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 75px 75px 75px 75px;
-  grid-template-areas:
-  ". bill_amount"
-  ". tip_percentage"
-  ". tip_amount"
-  ". total_bill"
-  "btn btn";
-  margin: 0 auto;
-  border: 5px solid #000000;
-  padding: 25px;
+h1{
+    position: absolute;
+    left: 50%;
+    top: -60px;
+    width: 300px;
+    transform: translateX(-50%);
+    background-color: #FF851B;
+    color: #fff;
+    font-weight: 100;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
 }
-#bill_amount{
-  grid-area: bill_amount;
+
+.wrapper{
+    padding: 20px;
 }
-#tip_percentage{
-  grid-area: tip_percentage;
+
+input, select{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #0074D9;
+    padding: 10px ;
 }
-#tip_amount{
-  grid-area: tip_amount;
+
+input:focus, select:focus{
+    border: 1px solid #0074D9;
+    outline: none;
 }
-#total_bill{
-  grid-area: total_bill;
+
+select{
+    width: 88% !important;
 }
-.input_styling{
-  height: 25px;
-  width: 250px;
+
+button{
+    margin: 20px auto;
+    width: 150px;
+    height: 50px;
+    background-color: #39CCCC;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
 }
-#btn{
-  grid-area: btn;
-  height: 25px;
-  width: auto;
+
+
+.tip{
+    text-align: center;
+    font-size: 18px;
+    display: none;
 }
